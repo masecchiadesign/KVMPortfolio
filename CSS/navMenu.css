@@ -1,0 +1,157 @@
+/*Menu CSS BEGIN*/
+
+
+.navigation-wrapper {
+  position: relative;
+}
+
+.navigation-button {
+  /* will-change: transform; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: fixed;
+  z-index: 11;
+  top: 40px;
+  right: 100px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.navigation-button .fa {
+  border: 2px solid white;
+  border-radius: 3px;
+  padding: 10px;
+  color: white;
+}
+
+.navigation-menu ul li {
+  list-style: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 30;
+  /* color: hsl(0,0%,70%); */
+}
+
+.navigation-menu {
+  content: '';
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%;
+  background: #595959;
+  height: 100%;
+  transform: skewX(0deg) translate(100%, 0);
+  transform-origin: top right;
+  transition: all .2s ease-in;
+  z-index: 10;
+}
+
+.navigation-menu ul {
+  transform: skewX(-8deg);
+  transform-origin: top left;
+  position: fixed;
+  right: 150px;
+  top: 220px;
+  width: 400px;
+  text-align: center;
+}
+
+.navigation-menu ul li {
+  position: relative;
+  z-index: 10;
+  font-size: 20px;
+  color: white;
+  line-height: 64px;
+}
+
+.navigation-menu ul li a {
+  border: none;
+  color: white;
+  text-decoration: none;
+}
+
+.navigation-menu.active {
+  transform: skewX(8deg) translate(0, 0);
+}
+
+.navigation-menu li {
+  opacity: 0;
+  transform: translate(0, 10px);
+  transition: all .0s ease-in .3s;
+}
+
+.navigation-menu.active li {
+  opacity: 1;
+  transform: translate(0, 0);
+  transition: all .2s ease-in 0s;
+}
+
+.navigation-menu.active li:nth-child(1) {
+  transition-delay: .3s;
+}
+
+.navigation-menu.active li:nth-child(2) {
+  transition-delay: .4s;
+}
+
+.navigation-menu.active li:nth-child(3) {
+  transition-delay: .5s;
+}
+
+.navigation-menu.active li:nth-child(4) {
+  transition-delay: .6s;
+}
+
+.navigation-menu.active li:nth-child(5) {
+  transition-delay: .7s;
+}
+
+.navigation-menu.active li:nth-child(6) {
+  transition-delay: .8s;
+}
+
+.navigation-menu.active li:nth-child(7) {
+  transition-delay: .9s;
+}
+
+/* Menu CSS END */
+
+/* Responsive Configuration  */
+@media screen and (max-width: 600px) {
+
+  .navigation-menu.active {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navigation-menu ul {
+    position: relative;
+    right: 70px;
+  }
+
+  .navigation-button {
+    position: fixed;
+    z-index: 11;
+    top: 40px;
+    right: 30px;
+  }
+
+  /* .headContainer {
+    margin-top: 130px;
+  } */
+
+  /* .contactContain .box {
+    flex-direction: column;
+  } */
+
+  /* .contactContain .box .details h3 {
+    font-size: 16px;
+  } */
+
+  /* .contactContain, .box, .icon {
+    width: 100%;
+    height: 50%;
+  } */
+}

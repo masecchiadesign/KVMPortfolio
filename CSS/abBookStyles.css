@@ -1,0 +1,235 @@
+body{
+  overflow: hidden;
+  background-color: #595959;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  margin-top: 100px;
+  margin-left: 150px;
+}
+
+.abText{
+    position: relative;
+   background: url(images/abLogo2.png);
+   background-size: cover;
+   background-position: center center;
+   width: 40%;
+   position: absolute;
+   margin-top: 200px;
+   left: 0px;
+   height: 20%;
+}
+
+.p1{
+  background-image: url(images/PORTFOLIO/2.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+
+.p2{
+  background-image: url(images/PORTFOLIO/3.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+
+.p3{
+  background-image: url(images/PORTFOLIO/4.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+.p4{
+  background-image: url(images/PORTFOLIO/5.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+
+.p5{
+  background-image: url(images/PORTFOLIO/6.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+
+.p6{
+  background-image: url(images/PORTFOLIO/7.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+.p7{
+  background-image: url(images/PORTFOLIO/8.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+
+.p8{
+  background-image: url(images/PORTFOLIO/9.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+
+.p9{
+  background-image: url(images/PORTFOLIO/10.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+.p10{
+  background-image: url(images/PORTFOLIO/11.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+.p11{
+  background-image: url(images/PORTFOLIO/12.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+.p12{
+  background-image: url(images/PORTFOLIO/13.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+.p13{
+  background-image: url(images/PORTFOLIO/14.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+.p14{
+  background-image: url(images/PORTFOLIO/15.png);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+.p15{
+  background-image: url(images/PORTFOLIO/1.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+.p16{
+  background-image: url(images/PHOTOGRAPHY/16.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+
+
+#book{
+	width: 1000px;
+	height: 500px;
+}
+#book .turn-page{
+	background-color: #ccc;
+}
+
+a{
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a:hover{
+  color: lightgrey;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 85px;
+  color: white;
+  text-align: center;
+  margin-bottom: 110px;
+}
+
+
+/*------Menu CSS BEGIN------*/
+.navigation-wrapper {
+  position: relative;
+}
+
+.navigation-button {
+  /* will-change: transform; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: fixed;
+  z-index: 11;
+  top: 40px;
+  right: 100px;
+  background: transparent;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.navigation-button .fa {
+  border: 2px solid white;
+  border-radius: 3px;
+  padding: 10px;
+  color: white;
+}
+
+
+/*------- Menu CSS END ---------*/
+/* Responsive Trigger */
+@media screen and (max-width: 600px) {
+
+  .navigation-menu.active {
+    flex-direction: column;
+    width: 100%;
+  }
+
+/*Text align: center, position:absolute */
+  .navigation-menu ul {
+    position: relative;
+      right: 70px;
+  }
+
+  .navigation-button {
+    position: fixed;
+    z-index: 11;
+    top: 40px;
+    right: 30px;
+  }
+
+  h1 {
+    font-family: 'Thasadith', sans-serif;
+    font-size: 65px;
+    color: white;
+    text-align: center;
+    position: relative;
+    margin-bottom: 100px;
+  }
+
+  .headContainer {
+    margin-top: 130px;
+  }
+
+  /*  */
+  .contactContain {
+    width: 100%;
+    display:inline-grid;
+    position: relative;
+    background-color: #b55400;
+    padding: 0;
+  }
+
+  .contactContain .box {
+    width:100%;
+    margin-bottom: 30px;
+  }
+
+  .contactContain .box .details h3 {
+    font-size: 16px;
+  }
+
+}

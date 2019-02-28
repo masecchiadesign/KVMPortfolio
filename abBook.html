@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>AQUABRASS BOOK</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script type="text/javascript" src="lib/turn.min.js"></script>
+    <link rel="stylesheet" href="CSS/abBookStyles.css">
+    <link rel="shortcut icon" type="image/jpg" href="CSS/images/FINALkvm.jpg"/>
+  <body>
+
+    <!--Menu Code START-->
+    <div class="navigation-wrapper">
+      <div class="navigation-button"><a href="onePort.html">GO BACK</a></div>
+
+<div class="abText">
+</div>
+
+  <!--Menu Code -->
+    <div id="book">
+      <div class="hard"></div>
+      <div><span class="p1"></span></div>
+      <div><span class="p2"></span></div>
+    	<div><span class="p3"></span></div>
+    	<div><span class="p4"></span></div>
+      <div><span class="p5"></span></div>
+      <div><span class="p6"></span></div>
+    	<div><span class="p7"></span></div>
+    	<div><span class="p8"></span></div>
+      <div><span class="p9"></span></div>
+      <div><span class="p10"></span></div>
+      <div><span class="p11"></span></div>
+      <div><span class="p12"></span></div>
+      <div><span class="p13"></span></div>
+      <div><span class="p14"></span></div>
+      <div><span class="p15"></span></div>
+      <div class="hard"></div>
+    </div>
+
+    <script type="text/javascript">
+      $('#book').turn({gradients: true, acceleration: true});
+    </script>
+
+    <script>
+      var navButton = document.querySelector('.navigation-button');
+      var navMenu = document.querySelector('.navigation-menu');
+      var win = window;
+
+
+      function openMenu(event) {
+
+        navButton.classList.toggle('active');
+        navMenu.classList.toggle('active');
+
+        event.preventDefault();
+        event.stopImmediatePropagation();
+      }
+
+      function closeMenu(event) {
+        if (navButton.classList.contains('active')) {
+          navButton.classList.remove('active');
+          navMenu.classList.remove('active');
+        }
+      }
+      navButton.addEventListener('click', openMenu, false);
+      win.addEventListener('click', closeMenu, false);
+
+    </script>
+
+  </body>
+</html>

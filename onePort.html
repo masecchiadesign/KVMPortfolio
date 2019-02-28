@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio Carousel</title>
+  <link rel="stylesheet" href="CSS/onePort.css">
+  <link rel="stylesheet" href="CSS/hamXStyles.css">
+  <!--Nav Css Link Start-->
+  <link rel="stylesheet" href="CSS/navMenu.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
+  <!--Nav Css Link End -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+  <link rel="shortcut icon" type="image/jpg" href="CSS/images/FINALkvm.jpg"/>
+</head>
+
+<body>
+  <!--Menu Code START-->
+  <div class="navigation-wrapper">
+    <div class="navigation-button">
+      <div id="ham">
+        <div class="main-item menu">
+          <span class="line line01"></span>
+          <span class="line line02"></span>
+          <span class="line line03"></span>
+        </div>
+      </div>
+    </div>
+    <div class="navigation-menu">
+      <ul>
+        <li><a href="aboutme.html">LETTER OF INTENT</a></li>
+        <li><a href="onePort.html">PORTFOLIO</a></li>
+        <li><a href="index.html">HOME</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    var navButton = document.querySelector('.navigation-button');
+    var navMenu = document.querySelector('.navigation-menu');
+    var win = window;
+
+    function openMenu(event) {
+
+      navButton.classList.toggle('active');
+      navMenu.classList.toggle('active');
+
+      event.preventDefault();
+      event.stopImmediatePropagation();
+    }
+
+    function closeMenu(event) {
+      if (navButton.classList.contains('active')) {
+        navButton.classList.remove('active');
+        navMenu.classList.remove('active');
+      }
+    }
+    navButton.addEventListener('click', openMenu, false);
+    win.addEventListener('click', closeMenu, false);
+  </script>
+  <!--Menu Code END-->
+  <div class="slide active">
+    <div class="card">
+      <div class="card-img" id="img01"></div>
+      <div class="card-content">
+        <p class="card-theme">1/15</p>
+        <h2 class="card-header">Midnight Falls</h2>
+        <p class="card-para">
+          Acrylic on canvas
+          <br> March 2017
+          <br>
+          <br>
+          This painting was completed when I had a sudden outburst of inspiration. I am not a relaxed painter. The process tends to stress me out and I concentrate too much on the things that I don’t like rather than focusing on just creating art.
+          However, things worked in my favor with this painting. I was my most calm, and stress-free self during the process of this painting. This was my first painting that I loved at first glance. Usually, I paint, critique my work and dislike
+          it. With this painting, I pained, critiqued and loved it.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="scrollDown"></div>
+  <!--down arrow -->
+  <div class="slide">
+    <div class="card">
+      <div class="card-img" id="img02"></div>
+      <div class="card-content">
+        <p class="card-theme">2/15</p>
+        <h2 class="card-header">Darkness Meets Rainbow</h2>
+        <p class="card-para">
+          34 x 40, Acrylic on canvas
+          <br> May 2014
+          <br>
+          <br>
+          This painting was my final project for class of 2014 Fine Arts at John Abbott. It was in the 2014 exhibition. This painting, well well well, (like my painting teacher would say when he liked something), this painting put me through the
+          ringer. It was the first exhibition that I had been part of and the pressure was ON. This painting did not look like this when I first started. It took a turn for the best. This was my first abstract painting, and boy did I fall in love
+          with abstract art from this point on. I had worked on this painting for weeks. The end never seemed close by, and the days got longer and longer when I faced my painting. Suddenly, I told myself to just go for it. And I did. This painting
+          is my favorite one. It taught me everything I know about painting today. It showed me darkness, but is also showed me that there is a rainbow at the end of every tunnel.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="slide">
+    <div class="card">
+      <div class="card-img" id="img03"></div>
+      <div class="card-content">
+        <p class="card-theme">3/15</p>
+        <h2 class="card-header">Darkness Meets Rainbow II</h2>
+        <p class="card-para">
+          34 x 40, Acrylic on canvas
+          <br> June 2014
+          <br>
+          <br>
+          Following my exhibition painting, and having felt so confident in my work and happy with the results, I had so much inspiration flowing through me that I had to project it on a blank canvas. With this inspiration, Darkness Meets Rainbow ll
+          was conceived.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="slide">
+    <div class="card">
+      <div class="card-img" id="img04"></div>
+      <div class="card-content">
+        <p class="card-theme">4/15</p>
+        <h2 class="card-header">The Girl in Me</h2>
+        <p class="card-para">
+          Intaglio Print
+          <br> April 2013
+          <br>
+          <br>
+          This print is about the girl that will always live within me. The girl who dreamt of her wedding, having kids, and always being full of life. I wanted to create a vintage feel to the print, so I left ink in certain areas to create the feel
+          of an old picture.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="slide">
+    <div class="card">
+      <div class="card-img" id="img05"></div>
+      <div class="card-content">
+        <p class="card-theme">5/15</p>
+        <h2 class="card-header">Seven Eyes</h2>
+        <p class="card-para">
+          <br>Photoshop 72 DPI x 72 DPI
+          <br> October 2018
+          <br>
+          <br>
+          I started to explore photography when I was 13 years old. I developed a fascination for black and white photography. My father was a photographer in his early life, and owned his own studio at 18 years old. He holds a huge part in my
+          interest for photography. Capturing moments, editing and viewing photos both relax and inspire me. When Facebook started to become popular, I was in grade 9 – and the famous ‘selfie’ was everyone’s profile picture. I started to take
+          portraits of myself and my best friend. With good lighting, makeup and both of our imaginations combined, we would conduct our very own photoshoots. All of our photos were edited in black and white, and the focal point were always our
+          eyes. My best friend and I had a thing for eyes. She would emphasize on the color of her eyes, and I would emphasize on the size of mine. My Facebook profile picture was always a headshot of myself, in black and white, with my eyes beaming
+          right through the screen. With this piece, I wanted to combine a couple of my favorite things into one.
+          1. Photography. 2. Black and white portraiture. 3. Photoshop. 4. EYES.
+          After taking several pictures, I edited them in Photoshop and overlayed them onto one another, creating an eerie yet intriguing aesthetic. With this project, I wanted to revisit the younger Karissa and create a piece that reflected on how
+          my creative mind has always been a huge part of my life. whether I was creating for school or just for fun with friends, it has always guided me through so much and has and will provide my life with ultimate happiness.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="slide">
+    <div class="card">
+      <div class="card-img" id="img06"></div>
+      <div class="card-content">
+        <p class="card-theme">6/15</p>
+        <h2 class="card-header">My Light</h2>
+        <p class="card-para">
+          <br>Photoshop 8 x 10, 300 DPI
+          <br> June 2018
+          <br>
+          <br>
+          This project is a representation of someone who means the world to me and I wanted to focus on all the things that mean something to us. Things that hold an importance in our relationship. Every element in this picture is part of a picture
+          that has been taken with him. This was my first Photoshop project, ever. I was extremely pleased with it. It was my final project for CEPH 219. I got a 90% on it. The inspiration behind this piece came from a painting I originally had set
+          out to do for him. However, I never had the chance to complete it. 
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="slide">
+    <div class="card">
+      <div class="card-img" id="img07"></div>
+      <div class="card-content">
+        <p class="card-theme">7/15</p>
+        <h2 class="card-header">Social Media</h2>
+        <p class="card-para">
+          Photoshop 8 x 10, 300 DPI
+          <br> October 2018
+          <br>
+          <br>
+          For this piece, I decided to project my feelings on a blank canvas. I created a piece that spoke to how I feel about something that many of us have conflict with. As technology plays such a huge role in our everyday lives, it can be
+          challenging to balance the use of technology in our daily routines. Personally, I am not one to enjoy being connected to the public eye 24/7. I find it overwhelming, and a waste of time. As I have grown up and matured into the person I am
+          today, I found that I was stepping further and further away from Instagram and all social media platforms. I made the conscious choice to limit myself from being public about my life, and I wanted to avoid being so present with everyone
+          else’s lives via social media. I have stopped using Instagram, and I have taken the time to focus on what is actually in front of me – my life.
+          <br>
+          In this project, you see that there is conflict between the lightbulb and the peony. The peony represents nature and all living things. The lightbulb represents all technology. I rendered the flames to represent the conflict between the
+          two, and how at times, I paid more attention to the lightbulb than the flower. As it’s taken some time to realize all the time that was wasted on social media, I couldn’t blame anyone but myself for allowing it to take over my time. This
+          is where my portrait comes in play. I put myself in the sky, representing that I control my life and that I am the only one held responsible for how I spend my time. The doves represent the symbol of messenger, love and peace. With these
+          doves, they are passing on the message that it is time to take control over the now, and to focus on the now and not the past, or future and to be as present as possible. The buildings are a representation of how strong I can be, and that
+          the effects of social media and the up-keep to be popular on social media, the likes, the followers – those are all things that can’t break me down.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="slide">
+    <div class="card">
+      <div class="card-img" id="img08"></div>
+      <div class="card-content">
+        <p class="card-theme">8/15</p>
+        <h2 class="card-header">Youth Has No Age </h2>
+        <p class="card-para">
+          Photoshop 8 x 10, 300 DPI
+          <br> September 2018
+          <br>
+          <br>
+          Last May, I spent some time in New York City, where I had the opportunity to travel for work and attend ICFF, an Interior Design Trade show at the Jarvis Centre. I had time to explore Soho, and visit the MoMa museum. The trip was filled
+          with great inspiration. As an artist, it's important for me to pay tribute to certain memories, moments or things that inspire me and help me evolve as an artist. 
+
+          At the museum, I took some pictures of the interiors. Interior design is something that has been a huge part of my life, and I can't ever help myself but admire them. The picture I took inside the museum is one that made me so happy. It
+          made me happy because I had the best day that day, and I felt like a kid in NYC exploring freely. Ironically, the artist who's work inspired me so much that day was Pablo Picasso. His work is what enhanced all my creativity that day. One
+          of my favourite quotes by Picasso is "Youth Has No Age", and this quote suits my lifestyle best. I tend to always remember the child that lives within me. It keeps me sane. 
+
+          With this project, I combined my admiration for the interior design of MoMa and Pablo Piccaso's work & quote. I wanted to recreate the picture I took in a more playful way. I turned the organic picture into a cartoon, paying tribute to
+          Youth Has No Age. 
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="slide">
+    <div class="card">
+      <div class="card-img" id="img09"></div>
+      <div class="card-content">
+        <p class="card-theme">9/15</p>
+        <h2 class="card-header">Sunnies</h2>
+        <p class="card-para">
+          8 x 10, 300 DPI, Photoshop
+          <br> November 2018
+          <br>
+          <br>
+          This was my final project for CEPH 419. I used a lot of the tools that our teacher taught us in class, and allowed my creativity to flourish within Photoshop. This project was very interesting because I combined several photos into one.
+          Everything in this picture has been either cut out from another picture or manipulated. This piece is called “Sunnies” because it was taken on a very sunny day, theres a sun flower and there are pictures in the sunglasses. All elements
+          included in this project were taken at the same time and place, New Hampsire, summer 2018.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="slide">
+    <div class="card">
+      <div class="card-img" id="img10"></div>
+      <div class="card-content">
+        <p class="card-theme">10/15</p>
+        <h2 class="card-header">Red Lada</h2>
+        <p class="card-para">
+          Photoshop 8 x 10, 300 DPI
+          <br> October 2018
+          <br>
+          <br>
+          Combining my love for photography and Photoshop is something that continues to inspire me to do more. When I see something that captures my attention, I take photos of the object/person/scenery and transform it into a cartoon in Photoshop.
+          I can be very silly. I consider myself someone who is happy go lucky, and I very much appreciate the child that still lives within me. As I capture moments, I enjoy turning these real moments into cartoon characters or objects.
+
+          This photo was taken in the Pointe Claire village. I drive a fiat, and this car inspired me because it is a Fiat Lada 1500s. I truly appreciate Fiats designs and the sustainability of their cars. The reason why I got a Fiat was because it
+          was super tiny, and it got me to from point A to point B, for a low cost. Having a Fiat 500 has also encouraged me to take the train throughout the winter, as my Fiat doesn’t handle the winter well. During the winter, I avoid driving and
+          only take public transportation, and sometimes carpool with friends.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="slide">
+    <div class="card">
+      <div class="card-img" id="img11"></div>
+      <div class="card-content">
+        <p class="card-theme">11/15</p>
+        <h2 class="card-header">Aquabrass Lookbook 2018</h2>
+        <p class="card-para">
+          12 x 12 Book
+          <br> December 2018
+          <br>
+          <br>
+          This project started from a simple doodle I did in class about 10 years ago. I’ve always done the same doodle. I’ve perfected it to the point where I can draw it with my eyes closed. About 3 months ago, I did my typical flower doodle in my
+          notebook, and a lightbulb went off. I then told myself I’d doodle as many flowers as I could and create an installation with it. This installation is in my room. I glued all doodles on my wall with mod podge. Afterwards, I built a frame
+          and painted it black to allow the tiny black lines from my doodle to pop. All doodles were done in a black permanent marker.
+        </p>
+        <a class="card-link" , href="abBook.html">See Interactive Book Here</a>
+      </div>
+    </div>
+  </div>
+  <div class="slide">
+    <div class="card">
+      <div class="card-img" id="img12"></div>
+      <div class="card-content">
+        <p class="card-theme">12/15</p>
+        <h2 class="card-header">Left My Heart in Rome</h2>
+        <p class="card-para">
+          72 x 72, Black and White Photography
+          <br> June 2018
+          <br>
+          <br>
+          I was on a business trip in Italy at the beginning of June and I was so inspired during this trip. One of my favorite classes at John About was Art History. This is where I had gotten extremely inspired by the Roman Renaissance and
+          developed a passion to learn about Roman art. My father was born in Italy, and every time I visit Italy, I feel so close to his heritage. One of the greatest moments in my life was when I got out from the Roman subway system and walked
+          outside and what stood in front of me was the Coliseum. My breath was taken away. This photograph was taken moments after I arrived in Rome. I always tell my family and friends that every time I visit Rome, I leave feeling like I left my
+          heart in Rome. </p>
+      </div>
+    </div>
+  </div>
+  <div class="slide">
+    <div class="card">
+      <div class="card-img" id="img13"></div>
+      <div class="card-content">
+        <p class="card-theme">13/15</p>
+        <h2 class="card-header">Georgia</h2>
+        <p class="card-para">
+          10 x 8 Photograph, edited in Photoshop
+          <br> January 2019
+          <br>
+          <br>
+          For this photoshoot, I wanted to focus on natural lighting while playing around with black and white photography. This shot was taken at the Mount Stephen Hotel. I booked a suit there for this shoot because I had worked in this suites for
+          a previous photoshoot I held there. All bathrooms were completed by Aquabrass. In 2017, I had done a product shoot there. I knew that the suites had incredible natural light and I wanted to work with it once again. For this shoot, I used
+          YSL as an inspiration, while focusing on the model’s outfit and accessories.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="slide">
+    <div class="card">
+      <div class="card-img" id="img14"></div>
+      <div class="card-content">
+        <p class="card-theme">14/15</p>
+        <h2 class="card-header">Doodle Gone Wild</h2>
+        <p class="card-para">
+          Installation, Doodles on wall, 24 linear feet
+          <br> December 2018
+          <br>
+          <br>
+          This project started from a simple doodle I did in class about 10 years ago. I’ve always done the same doodle. I’ve perfected it to the point where I can draw it with my eyes closed. About 3 months ago, I did my typical flower doodle in my
+          notebook, and a lightbulb went off. I then told myself I’d doodle as many flowers as I could and create an installation with it. This installation is in my room. I glued all doodles on my wall with mod podge. Afterwards, I built a frame
+          and painted it black to allow the tiny black lines from my doodle to pop. All doodles were done in a black permanent marker.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="slide">
+    <div class="card">
+      <div class="card-img" id="img15"></div>
+      <div class="card-content">
+        <p class="card-theme">15/15</p>
+        <h2 class="card-header">Aquabrass Instagram</h2>
+        <p class="card-para">
+          Instagram Page
+          <br>
+          <br>
+          I started to manage Aquabrass’s Instagram page in 2016. When I took over the account, it had around 4,000 followers. Today, we have grown our organic following to 10.3k. Using Instagram to promote our brand and to establish relationships
+          with designers via social media has helped us grow immensely. By publishing aesthetic and organic pictures to our page, we have created a consistent Instagram page in which our followers acknowledge. Many of our social media projects
+          derive from Instagram interactions.
+        </p>
+        <a class="card-link" , href="https://www.instagram.com/aquabrass/?hl=en">Visit Aquabrass Instagram</a>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(window).scroll(function() {
+
+      if ($(this).scrollTop() > 9700) {
+        $('.scrollDown').fadeOut();
+      } else {
+        $('.scrollDown').fadeIn();
+      }
+    });
+  </script>
+  <script type="text/javascript">
+    $("#ham").click(function() {
+      $(".menu").toggleClass("close");
+    });
+  </script>
+</body>
+
+</html>

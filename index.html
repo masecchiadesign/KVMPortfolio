@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>KVM Design</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+  <link rel="stylesheet" href="CSS/indexStyles.css">
+  <link rel="stylesheet" href="CSS/hamXStyles.css">
+  <!-- <link rel="stylesheet" href="CSS/navMenu.css"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="shortcut icon" type="image/jpg" href="CSS/images/FINALkvm.jpg"/>
+</head>
+
+<body>
+  <div class="container">
+    <div id="logo"><img class="" src="css/images/FINALkvm.jpg" , alt="KVM DESIGN LOGO", width=90px, height=90px /></div>
+    <!--Menu Code START-->
+    <div class="navigation-wrapper">
+      <div class="navigation-button">
+        <!-- <i class="fa fa-bars"></i> -->
+        <div id="ham">
+          <div class="main-item menu">
+            <span class="line line01"></span>
+            <span class="line line02"></span>
+            <span class="line line03"></span>
+          </div>
+        </div>
+    </div>
+      <div class="navigation-menu">
+        <ul>
+          <li><a href="aboutme.html">LETTER OF INTENT</a></li>
+          <li><a href="onePort.html">PORTFOLIO</a></li>
+          <li><a href="index.html">HOME</a></li>
+        </ul>
+      </div>
+    </div>
+    <section class="hero">
+      <h1> <span>DESIGN <br /> PORTFOLIO</span><br>By Karissa Vittoria Masecchia<br></h1>
+      <div class="button">
+        <a href="onePort.html" class="btn1">PORTFOLIO</a>
+        <a href="aboutme.html" class="btn2">LETTER OF INTENT</a>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    var navButton = document.querySelector('.navigation-button');
+    var navMenu = document.querySelector('.navigation-menu');
+    var win = window;
+
+
+    function openMenu(event) {
+
+      navButton.classList.toggle('active');
+      navMenu.classList.toggle('active');
+
+      event.preventDefault();
+      event.stopImmediatePropagation();
+    }
+
+    function closeMenu(event) {
+      if (navButton.classList.contains('active')) {
+        navButton.classList.remove('active');
+        navMenu.classList.remove('active');
+      }
+    }
+    navButton.addEventListener('click', openMenu, false);
+    win.addEventListener('click', closeMenu, false);
+
+  </script>
+
+  <script type="text/javascript">
+  $("#ham").click( function() {
+    $(".menu").toggleClass("close");
+  });
+  </script>
+
+<!--Menu Code END-->
+</body>
+</html>
