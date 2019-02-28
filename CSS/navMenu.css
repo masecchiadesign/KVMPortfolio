@@ -49,10 +49,10 @@
 }
 
 .navigation-menu ul {
-  transform: skewX(-8deg);
+  transform: skewX(0deg);
   transform-origin: top left;
   position: fixed;
-  right: 150px;
+  right: 120px;
   top: 220px;
   width: 400px;
   text-align: center;
@@ -73,7 +73,7 @@
 }
 
 .navigation-menu.active {
-  transform: skewX(8deg) translate(0, 0);
+  transform: skewX(0deg) translate(0, 0);
 }
 
 .navigation-menu li {
