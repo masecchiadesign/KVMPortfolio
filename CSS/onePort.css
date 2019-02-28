@@ -6,7 +6,7 @@ html, body {
 }
 
 body {
-      font-family: "Poppins";
+      font-family: "Montserrat";
       /* overflow: hidden; */
 }
 
@@ -104,7 +104,7 @@ body {
       line-height: 1;
       margin: 3vmin 0 3.5vmin;
       color: #fff;
-      font-family: Poppins;
+      font-family: "Montserrat"
 }
 
 .card-para {
@@ -113,12 +113,12 @@ body {
       font-weight: 300;
       margin-bottom: 2.5vmin;
       color: #fff;
-      font-family: Poppins;
+      font-family: "Montserrat";
 }
 
 .card-link {
       color: #fff;
-      font-family: Poppins;
+      font-family: "Montserrat";
       font-size: 1.8vmin;
       display: block;
       cursor: pointer;
